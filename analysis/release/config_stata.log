@@ -21,6 +21,59 @@ Notes:
       3. More than 2 billion observations are allowed; see help obs_advice.
       4. Maximum number of variables is set to 5,000; see help set_maxvar.
 
-. do "config/config_stata.do" 
-file config/config_stata.do not found
-r(601);
+. do "../config/config_stata.do" 
+
+. clear all
+
+. set more off
+
+. 
+. program main
+  1.     * *** Add required packages from SSC to this list ***
+.     local ssc_packages ""
+  2.     * *** Add required packages from SSC to this list ***
+. 
+.     if !missing("`ssc_packages'") {
+  3.         foreach pkg in "`ssc_packages'" {
+  4.         * install using ssc, but avoid re-installing if already present
+.             capture which `pkg'
+  5.             if _rc == 111 {                 
+  6.                dis "Installing `pkg'"
+  7.                quietly ssc install `pkg', replace
+  8.                }
+  9.         }
+ 10.     }
+ 11. 
+.     * Install packages using net, but avoid re-installing if already present
+.     capture which yaml
+ 12.        if _rc == 111 {
+ 13.         quietly net from "https://raw.githubusercontent.com/gslab-econ/stat
+> a-misc/master/"
+ 14.         quietly cap ado uninstall yaml
+ 15.         quietly net install yaml
+ 16.        }
+ 17.     * Install complicated packages : moremata (which cannot be tested for w
+> ith which)
+.     capture confirm file $adobase/plus/m/moremata.hlp
+ 18.         if _rc != 0 {
+ 19.         cap ado uninstall moremata
+ 20.         ssc install moremata
+ 21.         }
+ 22.      * Standard GSLAB stuff
+.     quietly net from "https://raw.githubusercontent.com/gslab-econ/gslab_stata
+> /master/gslab_misc/ado"
+ 23.        quietly cap net uninstall matrix_to_txt
+ 24.        quietly net install matrix_to_txt
+ 25.        quietly cap net uninstall preliminaries
+ 26.        quietly net install preliminaries
+ 27. 
+. end
+
+. 
+. main
+checking moremata consistency and verifying not already installed...
+installing into /Users/aqueiroz/Library/Application Support/Stata/ado/plus/...
+installation complete.
+
+. 
+end of do-file
