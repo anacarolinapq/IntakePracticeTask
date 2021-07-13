@@ -8,18 +8,22 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit b02e51d5a0b9c1090cda24367c2d68c7f4fb131b
-Author: David Ritzwoller <David.Ritzwoller@gmail.com>
-Date:   Wed Jan 29 21:06:58 2020 -0800
+commit 5d93126b0225f88ec858774392b2c9ca698affa0
+Author: anacarolinapq <77869104+anacarolinapq@users.noreply.github.com>
+Date:   Tue Jul 13 09:29:43 2021 -0700
 
-    #110 add Loader
+    Initialized repository with the gslab-econ template.
 
 
 Files changed since last commit:
 
 
+analysis/SConstruct
 analysis/release/descriptive/plot.eps
 analysis/release/descriptive/sconscript_descriptive.log
+analysis/release/sconstruct.log
+analysis/release/state_of_repo.log
+analysis/source/prepare_data/SConscript
 
 ===================================
 
@@ -27,77 +31,83 @@ analysis/release/descriptive/sconscript_descriptive.log
 
 ===================================
 ./config_user.yaml:
-   modified on: 29 Jan 2020 21:07:56
-   size of file: 646
+   modified on: 13 Jul 2021 13:15:42
+   size of file: 645
 ./run.py:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 11:44:07
    size of file: 449
 ./state_of_repo.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 525
+   modified on: 13 Jul 2021 13:56:40
+   size of file: 707
 ./SConstruct:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 1878
+   modified on: 13 Jul 2021 13:56:30
+   size of file: 1874
 ./config_global.yaml:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 1264
 ./sconstruct.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 502
+   modified on: 13 Jul 2021 13:56:39
+   size of file: 180
+./source/prepare_data/.Rhistory:
+   modified on: 13 Jul 2021 13:31:27
+   size of file: 0
 ./source/prepare_data/create_data.m:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 202
 ./source/prepare_data/create_data.sh:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 81
 ./source/prepare_data/create_data.do:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 262
 ./source/prepare_data/SConscript:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 13:51:15
    size of file: 1126
 ./source/prepare_data/create_data.py:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 260
 ./source/prepare_data/create_data.r:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 09:28:46
    size of file: 249
 ./source/descriptive/descriptive.py:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 12:44:10
    size of file: 548
 ./source/descriptive/SConscript:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 13 Jul 2021 13:51:29
    size of file: 501
 ./release/state_of_repo.log:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 2874
+   modified on: 13 Jul 2021 13:53:38
+   size of file: 3218
+./release/config_stata.log:
+   modified on: 13 Jul 2021 12:39:17
+   size of file: 1017
 ./release/sconstruct.log:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 306
+   modified on: 13 Jul 2021 13:53:38
+   size of file: 92
 ./release/descriptive/sconscript_descriptive.log:
-   modified on: 29 Jan 2020 21:08:02
+   modified on: 13 Jul 2021 13:15:59
    size of file: 96
 ./release/descriptive/plot.eps:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 12351
+   modified on: 13 Jul 2021 13:15:59
+   size of file: 15191
 ./release/descriptive/table.txt:
-   modified on: 29 Jan 2020 21:08:01
+   modified on: 13 Jul 2021 13:15:59
    size of file: 39
 ./release/lg/data.txt:
-   modified on: 29 Jan 2020 21:07:57
+   modified on: 13 Jul 2021 10:31:29
    size of file: 1988897
 ./build/prepare_data/sconscript_create_data.log:
-   modified on: 29 Jan 2020 21:07:57
-   size of file: 96
+   modified on: 13 Jul 2021 13:52:12
+   size of file: 257
 ./build/prepare_data/data.txt:
-   modified on: 29 Jan 2020 21:07:57
+   modified on: 13 Jul 2021 13:52:12
    size of file: 1988897
 ./build/descriptive/sconscript_descriptive.log:
-   modified on: 29 Jan 2020 21:08:02
+   modified on: 13 Jul 2021 13:15:59
    size of file: 96
 ./build/descriptive/plot.eps:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 12351
+   modified on: 13 Jul 2021 13:15:59
+   size of file: 15191
 ./build/descriptive/table.txt:
-   modified on: 29 Jan 2020 21:08:01
+   modified on: 13 Jul 2021 13:15:59
    size of file: 39
