@@ -1,0 +1,15 @@
+Import('env')
+import gslab_scons as gs
+
+build  = env['CONFIG']['global']['build']['draw_data']
+source = env['CONFIG']['global']['source']['draw_data']
+
+env.BuildR(target  = ['#%s/draw_data.csv'      % build],
+           source  = ['#%s/create_draw_data.r' % source],
+           log_ext =  'create_draw_data')
+
+# env.BuildMatlab(target  = ['#%s/data.txt'        % build],
+#                 source  = ['#%s/create_data.m'   % source],
+#                 log_ext =  'create_data')
+
+env.Install('#release/lg', '#%s/draw_data.csv' % build)

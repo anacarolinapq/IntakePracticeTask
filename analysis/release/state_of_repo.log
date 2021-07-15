@@ -8,20 +8,36 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit 6cec0345d0edc0f1c1c1fd4a9f6857a7cf7e7177
+commit 96e0b2dc939c7f9f171a38cfdeeb7329eb1d23f6
 Author: anacarolinapq <77869104+anacarolinapq@users.noreply.github.com>
-Date:   Tue Jul 13 14:00:58 2021 -0700
+Date:   Tue Jul 13 14:14:55 2021 -0700
 
-    #189: Run R script to prepare data
+    #189: Run STATA script to prepare data
 
 
 Files changed since last commit:
 
 
+.gitignore
 analysis/SConstruct
+analysis/config_global.yaml
+analysis/release/descriptive/plot.eps
+analysis/release/descriptive/sconscript_descriptive.log
 analysis/release/sconstruct.log
 analysis/release/state_of_repo.log
 analysis/source/prepare_data/SConscript
+paper_slides/input/plot.eps
+paper_slides/input/table.txt
+paper_slides/release/paper/ondeck.pdf
+paper_slides/release/paper/online_appendix.pdf
+paper_slides/release/paper/paper.pdf
+paper_slides/release/paper/sconscript.log
+paper_slides/release/paper/text.pdf
+paper_slides/release/sconstruct.log
+paper_slides/release/state_of_input.log
+paper_slides/release/state_of_repo.log
+paper_slides/release/talk/sconscript.log
+paper_slides/release/talk/slides.pdf
 
 ===================================
 
@@ -29,26 +45,29 @@ analysis/source/prepare_data/SConscript
 
 ===================================
 ./config_user.yaml:
-   modified on: 13 Jul 2021 13:15:42
-   size of file: 645
+   modified on: 14 Jul 2021 12:29:03
+   size of file: 641
 ./run.py:
    modified on: 13 Jul 2021 11:44:07
    size of file: 449
 ./state_of_repo.log:
-   modified on: 13 Jul 2021 14:13:57
-   size of file: 595
+   modified on: 14 Jul 2021 15:23:10
+   size of file: 1182
 ./SConstruct:
-   modified on: 13 Jul 2021 14:10:53
-   size of file: 1873
+   modified on: 14 Jul 2021 15:22:54
+   size of file: 1981
 ./config_global.yaml:
-   modified on: 13 Jul 2021 09:28:46
-   size of file: 1264
-./config_stata.log:
-   modified on: 13 Jul 2021 14:13:51
-   size of file: 2719
+   modified on: 14 Jul 2021 12:37:54
+   size of file: 1260
 ./sconstruct.log:
-   modified on: 13 Jul 2021 14:13:57
-   size of file: 222
+   modified on: 14 Jul 2021 15:23:10
+   size of file: 209
+./source/draw_data/create_draw_data.r:
+   modified on: 14 Jul 2021 14:09:11
+   size of file: 399
+./source/draw_data/SConscript:
+   modified on: 14 Jul 2021 14:09:05
+   size of file: 534
 ./source/prepare_data/.Rhistory:
    modified on: 13 Jul 2021 13:31:27
    size of file: 0
@@ -62,8 +81,8 @@ analysis/source/prepare_data/SConscript
    modified on: 13 Jul 2021 09:28:46
    size of file: 262
 ./source/prepare_data/SConscript:
-   modified on: 13 Jul 2021 14:11:16
-   size of file: 1126
+   modified on: 14 Jul 2021 14:39:18
+   size of file: 1470
 ./source/prepare_data/create_data.py:
    modified on: 13 Jul 2021 09:28:46
    size of file: 260
@@ -80,38 +99,38 @@ analysis/source/prepare_data/SConscript
    modified on: 13 Jul 2021 14:11:48
    size of file: 1100
 ./release/state_of_repo.log:
-   modified on: 13 Jul 2021 14:11:48
-   size of file: 3026
+   modified on: 14 Jul 2021 15:13:51
+   size of file: 3966
 ./release/config_stata.log:
-   modified on: 13 Jul 2021 12:39:17
-   size of file: 1017
+   modified on: 13 Jul 2021 14:13:51
+   size of file: 2719
 ./release/sconstruct.log:
-   modified on: 13 Jul 2021 14:11:48
-   size of file: 1470
+   modified on: 14 Jul 2021 15:13:51
+   size of file: 260
 ./release/descriptive/sconscript_descriptive.log:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:04
    size of file: 96
 ./release/descriptive/plot.eps:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:04
    size of file: 15191
 ./release/descriptive/table.txt:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:03
    size of file: 39
 ./release/lg/data.txt:
-   modified on: 13 Jul 2021 10:31:29
+   modified on: 23 Sep 2020 12:46:59
    size of file: 1988897
 ./build/prepare_data/sconscript_create_data.log:
-   modified on: 13 Jul 2021 14:13:57
-   size of file: 1545
+   modified on: 14 Jul 2021 09:54:02
+   size of file: 96
 ./build/prepare_data/data.txt:
-   modified on: 13 Jul 2021 14:13:57
+   modified on: 23 Sep 2020 12:46:59
    size of file: 1988897
 ./build/descriptive/sconscript_descriptive.log:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:04
    size of file: 96
 ./build/descriptive/plot.eps:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:04
    size of file: 15191
 ./build/descriptive/table.txt:
-   modified on: 13 Jul 2021 13:15:59
+   modified on: 14 Jul 2021 09:54:03
    size of file: 39

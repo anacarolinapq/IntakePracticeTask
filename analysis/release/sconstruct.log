@@ -1,8 +1,8 @@
-*** New build: {2021-07-13 14:13:57} ***
+*** New build: {2021-07-14 15:23:10} ***
 scons: done reading SConscript files.
 scons: Building targets ...
-build_stata(["build/prepare_data/data.txt"], ["source/prepare_data/create_data.do"])
+scons: `/Users/aqueiroz/IntakePracticeTask/paper_slides' is up to date.
 scons: done building targets.
-*** Build completed: {2021-07-13 14:13:57} ***
+*** Build completed: {2021-07-14 15:23:10} ***
  
  

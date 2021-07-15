@@ -30,7 +30,7 @@ source = env['CONFIG']['global']['source']['prepare_data']
 # Prepare data with external tool (Dropbox) using rclone 
 gs.build_anything(target  = ['#%s/data.txt' % build], 
                   source  = [''],
-                  action  = 'rclone copy gsbox:"GSLab Team Folder/Practice Task/" ./build/prepare_data/',
+                  action  = 'rclone copy gslab_remote:"GSLab Team Folder/Practice Task/" ./build/prepare_data/',
                   log_ext = 'create_data',
                   env     = env)
 

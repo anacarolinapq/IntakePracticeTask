@@ -1,9 +1,8 @@
-*** New build: {2018-02-14 21:11:14} ***
+*** New build: {2021-07-14 15:20:33} ***
 scons: done reading SConscript files.
 scons: Building targets ...
-scons: `build' is up to date.
-scons: `release' is up to date.
-scons: done building targets.
-*** Build completed: {2018-02-14 21:11:14} ***
+scons: *** [build/tables/table.lyx] Source `input/table.txt' not found, needed by target `build/tables/table.lyx'.
+scons: building terminated because of errors.
+*** Build completed: {2021-07-14 15:20:33} ***
  
  
