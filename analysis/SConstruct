@@ -48,11 +48,15 @@ atexit.register(gs.scons_debrief, args = debrief_args)
 
 # Run sub-trees
 SConscript('source/prepare_data/SConscript')
+SConscript('source/draw_data/SConscript')
 SConscript('source/descriptive/SConscript')
-Default('./build', './release')
-
+SConscript('source/plot/SConscript')
 
 # Connect analysis and paper-slides subdirectories 
-env.Install('../paper-slides/input', '#release/') 
+env.Install('../paper_slides/input', '#release/descriptive/plot.eps')
+env.Install('../paper_slides/input', '#release/descriptive/table.txt')
+
+#SConscript('source/plot/SConscript')
+Default('./build', './release')
 
 

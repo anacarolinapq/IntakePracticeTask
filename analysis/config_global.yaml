@@ -4,12 +4,16 @@ gslab_version: 4.1.1
 # Build Directories
 build:
   prepare_data: build/prepare_data
+  draw_data: build/draw_data
   descriptive: build/descriptive
+  plot: build/plot
 
 # Source Directories
 source:
   prepare_data: source/prepare_data
+  draw_data: source/draw_data
   descriptive: source/descriptive
+  plot: source/plot
 
 # Input Directories (will record contents)
 input: 
